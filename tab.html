@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style type="text/css">
+        .no_ga{
+            width: 1000px;
+            height: 500px;
+            position: relative;
+        }
+        .no_ga>div{
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+        }
+        .tit{
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 19px;
+            text-align: center;
+            background-color: #999;
+            position: absolute;
+            top: 5px;
+            left: 25px;
+            border: 1px solid;
+            border-bottom: none;
+            cursor: pointer;
+        }
+        
+        .tit.on{
+            background-color: #ddd;
+        }
+        .txt{
+            width: calc(100% - 10px);
+            height: 440px;
+            background-color: #ddd;
+            position: absolute;
+            top: 54px;
+            left: 5px;
+            border: 1px solid;
+            padding: 5px;
+        }
+
+        .no{}
+        .no_tit{
+        }
+        .no_txt{
+
+        }
+        .no_txt ul{}
+        .no_txt ul li{
+            height: 88px;
+            line-height: 88px;
+        }
+        .no_txt ul li a{
+            display: block;
+            float: left;
+            width: 80%;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            padding-left: 5px;
+        }
+        .no_txt ul li span{
+            display: block;
+            float: right;
+            padding-right: 5px;
+        }
+
+        .ga{
+            
+        }
+        .ga_tit{
+            left: 250px;
+        }
+        .ga_txt{
+            display: none;
+        }
+        .ga_txt ul{
+            padding-top: 50px;
+            text-align: center;
+        }
+        .ga_txt ul li{
+            display: inline-block;
+            width: 30%;
+        }
+        .ga_txt ul li:nth-child(2){
+            margin: 0 30px;
+        }
+        .ga_txt ul li img{
+            width: 100%;
+        }
+    </style>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script lang="java">
+        $(function(){
+            $(".tit").click(function(){
+                $(".tit").removeClass("on")
+                $(this).addClass("on")
+                $(".txt").hide()
+                $(this).next().show()
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="no_ga">
+        <div class="no">
+            <h2 class="tit no_tit on">공지사항</h2>
+            <div class="txt no_txt">
+                <ul>
+                    <li>
+                        <a href="#">공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항</a>
+                        <span>1111-11-11</span>
+                    </li>
+                    <li>
+                        <a href="#">공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항</a>
+                        <span>1111-11-11</span>
+                    </li>
+                    <li>
+                        <a href="#">공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항</a>
+                        <span>1111-11-11</span>
+                    </li>
+                    <li>
+                        <a href="#">공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항</a>
+                        <span>1111-11-11</span>
+                    </li>
+                    <li>
+                        <a href="#">공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항</a>
+                        <span>1111-11-11</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ga">
+            <h2 class="tit ga_tit">갤러리</h2>
+            <div class="txt ga_txt">
+                <ul>
+                    <li><a href="#"><img src="img/03de110bee4c37815d33.jpg" alt="g1"></a></li>
+                    <li><a href="#"><img src="img/12dcba833790b058ccc2.jpg" alt="g2"></a></li>
+                    <li><a href="#"><img src="img/18e2208c22b844a3c7f8.jpg" alt="g3"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
