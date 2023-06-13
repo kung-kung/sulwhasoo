@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style type="text/css">
+        .b{
+            width: 300px;
+            height: 350px;
+            border: 1px solid #ddd;
+            background: url("img/20200728_final_PERFECT_main_highlight_banner_pc.jpg") no-repeat;
+            background-size: cover;
+            background-position: center top;
+            position: relative;
+            margin: 100px auto;
+            overflow: hidden;
+            transition: all .5s;
+            cursor: url("img/icons8-search-50.png") 20 30, auto;
+        }
+        .c{
+            width: 1000px;
+            height: 800px;
+            background-color: rgba(255, 255, 255,1);
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            transform: translateX(-50%);
+            text-align: center;
+            padding: 10px;
+            transition: all .5s;
+        }
+
+        .b:hover{
+            background-position: center -20px;
+        }
+        .b:hover .c{
+            top: 80%;
+        }
+        .p1{
+            margin-bottom: 10px;
+        }
+        .p2{}
+    </style>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script lang="java">
+        $(function(){
+        })
+    </script>
+</head>
+<body>
+    <div class="b">
+        <div class="c">
+            <p class="p1">
+                @123456
+            </p>
+            <p class="p2">
+                가나다라마바사아자차카타파하
+            </p>
+        </div>
+    </div>
+</body>
+</html>
